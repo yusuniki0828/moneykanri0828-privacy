@@ -3,152 +3,100 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
   <title>moneykanri0828 プライバシーポリシー</title>
   <style>
-    :root {
-      color-scheme: light;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
-      color: #1f2937;
-      background: #f5f7fa;
-    }
+    :root { color: #1f2937; background: #f7f9fc; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.75; }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      padding: 32px 16px;
-      line-height: 1.8;
-      overflow-wrap: anywhere;
-    }
-    main {
-      width: 100%;
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 40px;
-      background: #ffffff;
-      border: 1px solid #dbe3ed;
-      border-radius: 10px;
-      box-shadow: 0 4px 18px rgb(15 23 42 / 6%);
-    }
-    h1, h2 { color: #123f78; line-height: 1.4; }
-    h1 { margin: 0 0 8px; font-size: 2rem; }
-    h2 {
-      margin: 2.2em 0 0.6em;
-      padding-bottom: 0.3em;
-      border-bottom: 1px solid #dbe3ed;
-      font-size: 1.35rem;
-    }
-    p { margin: 0.8em 0; }
-    ul { margin: 0.8em 0; padding-left: 1.5em; }
-    li + li { margin-top: 0.25em; }
-    code {
-      padding: 0.1em 0.35em;
-      font-family: Consolas, "Courier New", monospace;
-      background: #eef2f7;
-      border-radius: 4px;
-    }
-    pre {
-      margin: 1em 0;
-      padding: 14px 16px;
-      overflow-x: auto;
-      background: #eef2f7;
-      border-radius: 6px;
-    }
-    pre code { padding: 0; background: transparent; }
-    .updated { margin-top: 0; color: #52606d; }
-    @media (max-width: 600px) {
-      body { padding: 0; background: #ffffff; }
-      main { padding: 24px 18px 40px; border: 0; border-radius: 0; box-shadow: none; }
-      h1 { font-size: 1.55rem; }
-      h2 { font-size: 1.2rem; }
-    }
+    body { margin: 0; padding: 32px 16px; }
+    main { width: min(100%, 840px); margin: 0 auto; padding: 40px 48px; background: #fff; border: 1px solid #dce3ec; border-radius: 12px; box-shadow: 0 8px 28px rgba(31, 41, 55, .07); }
+    h1 { margin: 0 0 8px; color: #173f70; font-size: clamp(1.65rem, 4vw, 2.25rem); line-height: 1.3; }
+    h2 { margin: 2.2rem 0 .65rem; padding-bottom: .35rem; border-bottom: 1px solid #dce3ec; color: #173f70; font-size: 1.25rem; }
+    p { margin: .7rem 0; }
+    ul { margin: .6rem 0; padding-left: 1.5rem; }
+    li + li { margin-top: .2rem; }
+    .updated { margin: 0 0 1.5rem; color: #526172; }
+    .contact { padding: 12px 16px; overflow-wrap: anywhere; background: #f1f5f9; border-radius: 6px; }
+    @media (max-width: 640px) { body { padding: 0; } main { padding: 28px 20px; border: 0; border-radius: 0; box-shadow: none; } }
   </style>
 </head>
 <body>
-  <main>
-    <h1>moneykanri0828 プライバシーポリシー</h1>
-    <p class="updated">最終更新日: 2026年9月2日</p>
+<main>
+  <h1>moneykanri0828 プライバシーポリシー</h1>
+  <p class="updated">最終更新日: 2026年9月6日</p>
 
-    <p>本プライバシーポリシーは、Windowsデスクトップアプリ<code>moneykanri0828</code>（以下「本アプリ」）における情報の取扱いを説明するものです。</p>
+  <p>本プライバシーポリシーは、Windowsデスクトップアプリ「moneykanri0828」（以下「本アプリ」）における情報の取扱いを説明するものです。</p>
 
-    <section>
-      <h2>1. 本アプリが取り扱う情報</h2>
-      <p>本アプリは、ユーザーが入力または選択した次の情報を端末内で取り扱います。</p>
-      <ul>
-        <li>家族メンバーの名称</li>
-        <li>金融機関、口座、保有資産および資産クラスの名称と設定</li>
-        <li>基準日と日本円による資産評価額</li>
-        <li>snapshot履歴</li>
-        <li>ユーザーが明示的に選択したCSVの内容</li>
-        <li>CSV取込presetに含まれる列マッピングや取込設定</li>
-      </ul>
-    </section>
+  <h2>1. 本アプリが取り扱う情報</h2>
+  <p>本アプリは、ユーザーが入力または選択した次の情報を端末内で取り扱います。</p>
+  <ul>
+    <li>家族メンバーの名称</li>
+    <li>金融機関、口座、保有資産および資産クラスの名称と設定</li>
+    <li>基準日と日本円による資産評価額</li>
+    <li>snapshot履歴</li>
+    <li>ユーザーが明示的に選択したCSVの内容</li>
+    <li>CSV取込presetに含まれる列マッピングや取込設定</li>
+    <li>ユーザーが明示的に選択したPNGまたはJPEG画像</li>
+    <li>画像から端末内のWindows OCRで生成した金額、日付、金融機関、口座および保有資産の候補</li>
+  </ul>
 
-    <section>
-      <h2>2. 保存場所</h2>
-      <p>資産情報、設定およびsnapshot履歴は、Windows上の本アプリ用データ領域に作成されるローカルSQLiteデータベースへ保存されます。CSV取込presetも同じアプリ用データ領域のローカルファイルへ保存されます。</p>
-      <p>本アプリはCSV本文やCSVファイルの絶対パスをpresetへ保存しません。CSVの構造previewと取込処理に必要な内容は処理中のメモリで保持され、CSV本文を本アプリのデータ領域へ恒久保存しません。ユーザーが選択した元のCSVファイル自体は、ユーザーが保存した場所に残ります。</p>
-    </section>
+  <h2>2. 保存場所</h2>
+  <p>資産情報、設定およびsnapshot履歴は、Windows上の本アプリ用データ領域に作成されるローカルSQLiteデータベースへ保存されます。CSV取込presetも同じアプリ用データ領域のローカルファイルへ保存されます。</p>
+  <p>本アプリはCSV本文やCSVファイルの絶対パスをpresetへ保存しません。CSVの構造previewと取込処理に必要な内容は処理中のメモリで保持され、CSV本文を本アプリのデータ領域へ恒久保存しません。ユーザーが選択した元のCSVファイル自体は、ユーザーが保存した場所に残ります。</p>
+  <p>画像から候補を読み取る場合、選択した原画像とそのファイルパスは処理中だけ端末内で取り扱い、本アプリのデータ領域へ恒久保存しません。原画像は候補抽出の完了、失敗またはキャンセル後に破棄します。OCRで生成した候補も、確認の完了、キャンセルまたは有効期限切れ後に破棄します。ユーザーが確認して明示的に登録した基準日と評価額だけが、通常のsnapshotとしてローカルSQLiteデータベースへ保存されます。</p>
 
-    <section>
-      <h2>3. CSVの取扱い</h2>
-      <p>CSVは、ユーザーがWindowsのネイティブファイル選択ダイアログでファイルを明示的に選択した場合に限り読み込まれます。CSVの解析、日付・金額の検証、preview、重複・競合確認および登録処理は端末内で行われます。</p>
-      <p>本アプリはCSV本文、CSVに含まれる金額、資産情報またはファイルパスをクラウドや外部サービスへ送信しません。</p>
-    </section>
+  <h2>3. CSVの取扱い</h2>
+  <p>CSVは、ユーザーがWindowsのネイティブファイル選択ダイアログでファイルを明示的に選択した場合に限り読み込まれます。CSVの解析、日付・金額の検証、preview、重複・競合確認および登録処理は端末内で行われます。</p>
+  <p>本アプリはCSV本文、CSVに含まれる金額、資産情報またはファイルパスをクラウドや外部サービスへ送信しません。</p>
 
-    <section>
-      <h2>4. 外部送信と第三者提供</h2>
-      <p>本アプリは、次の処理を行いません。</p>
-      <ul>
-        <li>金額、資産情報、家族情報、口座情報のアプリ提供者または第三者への送信</li>
-        <li>CSV本文のクラウドへのアップロード</li>
-        <li>外部金融機関APIへの接続</li>
-        <li>金融機関口座との自動連携</li>
-        <li>クラウド同期</li>
-        <li>金融情報を収集するanalytics、telemetryまたはクラッシュ分析</li>
-        <li>広告表示および広告目的の追跡</li>
-      </ul>
-      <p>本アプリには広告およびアプリ内購入はありません。</p>
-      <p>Microsoft StoreやWindowsが本アプリとは別に取り扱う情報については、Microsoftが提供する各サービスのプライバシーポリシーが適用されます。</p>
-    </section>
+  <h2>4. 画像とOCRの取扱い</h2>
+  <p>PNGまたはJPEG画像は、ユーザーがWindowsのネイティブファイル選択ダイアログでファイルを明示的に選択した場合に限り読み込まれます。画像の検証、Windows OCRによる文字認識、金額・日付・名称候補の抽出は端末内で行われます。</p>
+  <p>本アプリは画像、画像のファイルパス、OCRで認識した文字列、金額または資産情報をクラウドや外部サービスへ送信しません。OCR結果は候補として表示するだけで、自動確定または自動登録しません。ユーザーが金額、基準日および保有資産を確認または編集し、最終確認後に「登録する」を明示的に操作した場合に限りsnapshotを登録します。</p>
 
-    <section>
-      <h2>5. 情報の利用目的</h2>
-      <p>端末内で取り扱う情報は、ユーザーが次の機能を利用するためにのみ使用されます。</p>
-      <ul>
-        <li>資産情報とsnapshot履歴の記録</li>
-        <li>基準日時点の資産額の集計</li>
-        <li>現在資産、比較、推移および配分の表示</li>
-        <li>CSV取込のpreview、確認および登録</li>
-        <li>CSV取込presetの保存と再利用</li>
-      </ul>
-    </section>
+  <h2>5. 外部送信と第三者提供</h2>
+  <p>本アプリは、次の処理を行いません。</p>
+  <ul>
+    <li>金額、資産情報、家族情報、口座情報の提供者または第三者への送信</li>
+    <li>CSV本文のクラウドへのアップロード</li>
+    <li>画像またはOCR結果のクラウドへのアップロード</li>
+    <li>外部金融機関APIへの接続</li>
+    <li>金融機関口座との自動連携</li>
+    <li>クラウド同期</li>
+    <li>金融情報を収集するanalytics、telemetryまたはクラッシュ分析</li>
+    <li>広告表示および広告目的の追跡</li>
+  </ul>
+  <p>本アプリには広告およびアプリ内購入はありません。</p>
+  <p>Microsoft StoreやWindowsが本アプリとは別に取り扱う情報については、Microsoftが提供する各サービスのプライバシーポリシーが適用されます。</p>
 
-    <section>
-      <h2>6. 情報の管理</h2>
-      <p>本アプリのデータは端末内に保存されるため、Windowsアカウント、端末のアクセス制御およびOSのセキュリティ機能を適切に管理してください。本アプリは独自のパスワード認証やSQLiteデータベースの独自暗号化を提供していません。</p>
-      <p>共有PCを利用する場合は、Windowsのユーザーアカウントを分け、第三者が本アプリのデータへアクセスできないよう端末を保護してください。</p>
-    </section>
+  <h2>6. 情報の利用目的</h2>
+  <p>端末内で取り扱う情報は、ユーザーが次の機能を利用するためにのみ使用されます。</p>
+  <ul>
+    <li>資産情報とsnapshot履歴の記録</li>
+    <li>基準日時点の資産額の集計</li>
+    <li>現在資産、比較、推移および配分の表示</li>
+    <li>CSV取込のpreview、確認および登録</li>
+    <li>CSV取込presetの保存と再利用</li>
+    <li>画像からの金額、日付、金融機関、口座および保有資産候補の生成と、ユーザー確認後のsnapshot登録</li>
+  </ul>
 
-    <section>
-      <h2>7. アンインストールとデータ削除</h2>
-      <p>本アプリをアンインストールした場合、WindowsまたはMicrosoft Storeの処理によって、本アプリのローカルデータが削除される可能性があります。一方で、環境やアンインストール方法によって挙動が異なる可能性があるため、アンインストール後の保持または削除を保証するものではありません。</p>
-      <p>保持が必要なデータがある場合は、アンインストール前にデータの取扱いを確認してください。Store版におけるupdate後のデータ維持とアンインストール時の削除挙動は、Store署名済み版で確認する予定です。</p>
-    </section>
+  <h2>7. 情報の管理</h2>
+  <p>本アプリのデータは端末内に保存されるため、Windowsアカウント、端末のアクセス制御およびOSのセキュリティ機能を適切に管理してください。本アプリは独自のパスワード認証やSQLiteデータベースの独自暗号化を提供していません。</p>
+  <p>共有PCを利用する場合は、Windowsのユーザーアカウントを分け、第三者が本アプリのデータへアクセスできないよう端末を保護してください。</p>
 
-    <section>
-      <h2>8. 子どものプライバシー</h2>
-      <p>本アプリは、子どもから情報を収集して提供者へ送信する機能、ユーザー間交流機能、広告または課金機能を提供しません。</p>
-    </section>
+  <h2>8. アンインストールとデータ削除</h2>
+  <p>本アプリをアンインストールした場合、WindowsまたはMicrosoft Storeの処理によって、本アプリのローカルデータが削除される可能性があります。一方で、環境やアンインストール方法によって挙動が異なる可能性があるため、アンインストール後の保持または削除を保証するものではありません。</p>
+  <p>保持が必要なデータがある場合は、アンインストール前にデータの取扱いを確認してください。Store版におけるupdate後のデータ維持とアンインストール時の削除挙動は、Store署名済み版で確認する予定です。</p>
 
-    <section>
-      <h2>9. 本ポリシーの変更</h2>
-      <p>本アプリの機能または情報の取扱いを変更した場合、本ポリシーを更新することがあります。重要な変更がある場合は、Store listingその他の適切な方法で案内します。</p>
-    </section>
+  <h2>9. 子どものプライバシー</h2>
+  <p>本アプリは、子どもから情報を収集して提供者へ送信する機能、ユーザー間交流機能、広告または課金機能を提供しません。</p>
 
-    <section>
-      <h2>10. 問い合わせ先</h2>
-      <p>本ポリシーおよび本アプリの情報取扱いに関する問い合わせ先:</p>
-      <pre><code>dragonwing0828@gmail.com</code></pre>
-    </section>
-  </main>
+  <h2>10. 本ポリシーの変更</h2>
+  <p>本アプリの機能または情報の取扱いを変更した場合、本ポリシーを更新することがあります。重要な変更がある場合は、Store listingその他の適切な方法で案内します。</p>
+
+  <h2>11. 問い合わせ先</h2>
+  <p>本ポリシーおよび本アプリの情報取扱いに関する問い合わせ先:</p>
+  <p class="contact">dragonwing0828@gmail.com</p>
+</main>
 </body>
 </html>
